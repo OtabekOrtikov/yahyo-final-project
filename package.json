@@ -1,0 +1,19 @@
+{
+  "name": "shopping-list-app",
+  "version": "1.0.0",
+  "description": "A shopping list application in TypeScript",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^4.9.5",
+    "vite": "^6.3.5"
+  }
+}
