@@ -14,7 +14,8 @@ export class ShoppingList {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(this.items));
     } catch (e) {
-      console.error('Failed to save shopping list', e);
+      this.items = [];
+      localStorage.removeItem(STORAGE_KEY);
     }
   }
 
@@ -30,7 +31,6 @@ export class ShoppingList {
         );
       }
     } catch (e) {
-      console.error('Failed to load shopping list', e);
       this.items = [];
     }
   }
